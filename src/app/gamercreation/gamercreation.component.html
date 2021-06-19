@@ -1,0 +1,11 @@
+<h1>Welcome Gamer!</h1>
+
+<input type="text" placeholder="New gamer" [(ngModel)]="newGamer">
+<br>
+<input type="text" placeholder="Email" [(ngModel)]="email"> 
+<br>
+<input type="text" placeholder="Password" [(ngModel)]="password">
+<br>
+
+<button (click)="SaveNewUser(newGamer, email, password)">Save gamer</button>
+<button routerLink="/home">Go back</button>

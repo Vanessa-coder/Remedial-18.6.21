@@ -1,0 +1,15 @@
+<h1>Games Details!</h1>
+
+<input type="text" placeholder="Prefered Genre" [(ngModel)]="pregen">
+<br>
+<input type="text" placeholder="Main Game" [(ngModel)]="mgame"> 
+<br>
+<input type="text" placeholder="Secondary Game" [(ngModel)]="sgame">
+<br>
+<input type="text" placeholder="Optional Game" [(ngModel)]="ogame">
+<br>
+<input type="text" placeholder="Years Gaming" [(ngModel)]="ygaming">
+<br>
+
+<button (click)="SaveGamesDetails(pregen, mgame, sgame, ogame, ygaming)">Save new details</button>
+<button routerLink="/home">Go back</button>
